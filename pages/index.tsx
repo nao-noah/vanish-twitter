@@ -41,8 +41,8 @@ const Home: NextPage = () => {
         <input type="submit" value="Tweet!" />
       </form>
       <main>
-        {tweets.map((t) => (
-          <Tweet tweet={t} />
+        {tweets.map((t, i) => (
+          <Tweet key={i} tweet={t} />
         ))}
       </main>
     </>
