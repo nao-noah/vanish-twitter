@@ -1,0 +1,72 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  height: 40px;
+  box-shadow: 0px -15px 20px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+form {
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+}
+
+input[type="text"] {
+  border: 1px solid #ccc;
+  height: 40px;
+  width: 300px;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 16px;
+
+  &:focus {
+    outline: none;
+    border: 1px solid #00b894;
+  }
+
+  &::placeholder {
+    color: #999;
+  }
+}
+
+input[type="submit"] {
+  margin: 0 0 0 10px;
+  height: 40px;
+  width: 80px;
+  border-radius: 4px;
+  background-color: #00b894;
+  border: 0;
+  color: #fff;
+  font-size: 16px;
+}
+
+main {
+  margin: 0 auto;
+  width: 400px;
+  border-top: 1px solid #ccc;
+}
+
+.tweet {
+  border-bottom: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 20px;
+  word-break: break-all;
+}
